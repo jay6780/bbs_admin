@@ -1,0 +1,1 @@
+module '@bytemd/vue-next'
