@@ -693,3 +693,12 @@ export function resolvePath(path: string){
 };
 
 
+
+/**
+ * 修复头像路径，自动补全API域名
+ */
+export function resolveAvatarPath(path: string): string {
+    if (!path) return '';
+    if (path.startsWith('http') || path.startsWith('data:')) return path;
+    return import.meta.env.VITE_API_URL + path;
+}
