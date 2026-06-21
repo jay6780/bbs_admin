@@ -702,3 +702,4 @@ export function resolveAvatarPath(path: string): string {
     if (path.startsWith('http') || path.startsWith('data:')) return path;
     return import.meta.env.VITE_API_URL + path;
 }
+}
